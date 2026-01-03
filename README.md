@@ -4,7 +4,7 @@
 #### by Ryan Breen, M.S. MLS (ASCM)
 
 
-![Alt text](./images/01_Logistic Regression with a Qualitative Clinical Lab Test_cell3_image.png)
+![Alt text](./images/1.png)
 
 
 ## Background
@@ -27,7 +27,7 @@ The outputs values between 0 to 1 are literally created by inputting values into
 
 $P(Y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1x_1 + \beta_2x_2 + \cdots + \beta_nx_n)}}$ 
 
-![Alt text](./images/01_Logistic Regression with a Qualitative Clinical Lab Test_cell7_image.png)
+![Alt text](./images/2.png)
 
 #### Receiver Operator Curves
 
@@ -35,16 +35,16 @@ To determine an ELISA cutoff using logistic regression, you model the probabilit
 
 A Receiver Operating Characteristic (ROC) curve is a graph that visualizes a binary classification model's performance across all possible thresholds, plotting its True Positive Rate (Sensitivity) (TPR) against its False Positive Rate (FPR) at various settings. 
 
-![Alt text](./images/01_Logistic Regression with a Qualitative Clinical Lab Test_cell10_image.png)
+![Alt text](./images/3.png)
 
 The graph below demonstrates a __Receiver Operating Curve__ that is commonly displayed when performing logistic regression equation.  The __Receiver Operating Curve__ using the __Area Under the Curve (AUC)__ as a performance measure to determine how well the logistic regression equation is classifying positive and negative results using the inputs and outputs. A perfect classifier would have an AUC = 1 meaning that the __True Positive Rate__ = 100% (1.00) and __False Positive Rate__ = 0% (0.00). Most statistical software are capable of measuring the AUC:
 
-![Alt text](./images/01_Logistic Regression with a Qualitative Clinical Lab Test_cell12_image.png)
+![Alt text](./images/4.png)
 
 #### Peformance Characteristics Equations for Logistic Regression Classification
 The following equations gauge specific characteristics of the regression model. These measures may only be used if we know the true classificaiton of each sample. For example, if we are preforming an HIV ELISA test and the patient truely has been diagnosed with HIV and the test is positive then the result is a _True Positive_. 
 
-![Alt text](./images/01_Logistic Regression with a Qualitative Clinical Lab Test_cell14_image.png)
+![Alt text](./images/5.png)
 
 ## Peforming Logistic Regression with Python
 
@@ -205,7 +205,7 @@ plt.show()
 
 
     
-![Alt text](./images/01_Logistic Regression with a Qualitative Clinical Lab Test_cell25_image.png)
+![Alt text](./images/6.png)
     
 
 
